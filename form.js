@@ -1,6 +1,7 @@
 console.log('JS OK')
 
 /*
+Recupero informazioni dal dom
 1. Chiediamo Il numero di kilometri all'utente.
 2. Chiediamo l'età del passegero.
 3. Calcoliamo il prezzo in base ai kilometri (0.21 € per km).
@@ -13,3 +14,12 @@ Milestone 2. Realizziamo in pagina il form funzionante e collegato.
 
 */
 
+//Recupero informazioni dal DOM
+const result = document.getElementById('result');
+const kmNumberField = document.querySelector('km');
+const ageNumberField = document.querySelector('age');
+
+// 1 + recupero valore dell'output
+
+const kmNumber = kmNumberField.value.trim();
+const ageNumber = ageNumberField.value.trim();
