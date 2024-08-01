@@ -25,25 +25,40 @@ const paragraph = document.querySelector('p');
 
 
 
-// GESTIONE EVENTI
-
-button.addEventListener('click', function () {
-    console.log('cliccato')
-});
-
-
-// 1 + 2 + recupero valore dell'output
-
+// GESTIONE EVENTI + recupero valore input
+button.addEventListener('click', function (){
 const kmNumber = kmNumberField.value.trim();
 const ageNumber = ageNumberField.value.trim();
 const firstName = firstNameField.value.trim();
 const lastName = lastNameField.value.trim();
 
-button.addEventListener('click', function (){
- console.log(kmNumber , ageNumber , firstName , lastName);   
-})
-
-// 3 
+// Genero Il prezzo
 
 const generatedPrice = kmNumber * 0.21;
-console.log(generatedPrice)
+
+let finalPrize = generatedPrice;
+
+// Applico lo sconto
+
+if ( ageNumber < 18){
+    finalPrize *= 0.8;
+}
+else if (ageNumber > 65){
+    finalPrize *= 0.6;
+}
+
+// Applico risultato in console
+
+finalPrize = finalPrize.toFixed(2) + '€';
+console.log(finalPrize);
+
+// Applico risultato in pagina
+
+paragraph.innerText = finalPrize;
+
+})
+
+
+
+
+
