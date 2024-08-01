@@ -16,10 +16,10 @@ Milestone 2. Realizziamo in pagina il form funzionante e collegato.
 
 //Recupero informazioni dal DOM
 const result = document.getElementById('result');
-const kmNumberField = document.querySelector('km');
-const ageNumberField = document.querySelector('age');
-const firstNameField = document.querySelector('name');
-const lastNameField = document.querySelector('lastname')
+const kmNumberField = document.querySelector('.km');
+const ageNumberField = document.querySelector('.age');
+const firstNameField = document.querySelector('.name');
+const lastNameField = document.querySelector('.lastname');
 const button = document.querySelector('button');
 
 
