@@ -18,8 +18,22 @@ Milestone 2. Realizziamo in pagina il form funzionante e collegato.
 const result = document.getElementById('result');
 const kmNumberField = document.querySelector('km');
 const ageNumberField = document.querySelector('age');
+const firstNameField = document.querySelector('name');
+const lastNameField = document.querySelector('lastname')
+const button = document.querySelector('button');
+
+
+
+// GESTIONE EVENTI
+
+button.addEventListener('click', function () {
+    console.log('cliccato')
+});
+
 
 // 1 + recupero valore dell'output
 
 const kmNumber = kmNumberField.value.trim();
 const ageNumber = ageNumberField.value.trim();
+const name = firstNameField.value.trim();
+const lastName = lastNameField.value.trim();
