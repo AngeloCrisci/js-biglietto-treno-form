@@ -24,7 +24,6 @@ const button = document.querySelector('button');
 const paragraph = document.querySelector('p');
 
 
-
 // GESTIONE EVENTI + recupero valore input
 button.addEventListener('click', function (){
 const kmNumber = kmNumberField.value.trim();
@@ -54,7 +53,10 @@ console.log(finalPrize);
 
 // Applico risultato in pagina
 
-paragraph.innerText = finalPrize;
+paragraph.innerText = `Ciao ${firstName} ${lastName}, il prezzo del tuo biglietto è ${finalPrize}`
+
+// Svuoto il form 
+this.form.reset();
 
 })
 
